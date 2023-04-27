@@ -1,0 +1,716 @@
+@font-face {
+    font-family: Open Regular;
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff');
+}
+
+@font-face {
+    font-family: Open Bold;
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff');
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000000;
+    opacity: 0.600;
+    z-index: -1;
+}
+
+.header-container {
+    width: 1200px;
+    min-height: 450px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+    margin-top: 30px;
+}
+
+.navbar-panel {
+    margin-top: 45px;
+}
+
+.nav-list-item {
+    display: inline-block;
+}
+
+.item {
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Open Regular;
+}
+
+.item:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+.nav-list-item:nth-child(n + 2) {
+    margin-left: 35px;
+}
+
+.header-title {
+    display: inline;
+    width: 679px;
+    min-height: 110px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 45px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Open Bold;
+    margin-top: 75px;
+    text-align: center;
+}
+
+.workspace {
+    width: 100%;
+    height: 100%px;
+    background-color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    width: 1200px;
+    min-height: 2420px;
+    margin: 0px auto 65px auto;
+    padding-top: 65px;
+}
+
+.news-container {
+    display: flex;
+    width: 793px;
+    min-height: 294px;
+}
+
+.news-container:nth-child(n + 2){
+    padding-top: 60px;
+}
+
+.news-image {
+    width: 381px;
+    height: 294px;
+    padding: 0px 30px 0px 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.news-image:before {
+    content: "";
+    position: absolute;
+    width: 381px;
+    height: 294px;
+    background-color: #eff6f1;
+    z-index: -1;
+}
+
+.news-text-box {
+    width: 367px;
+    height: 294px;
+}
+
+.news-direction {
+    display: inline;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-family: Open Bold;
+    padding-right: 20px;
+}
+
+.header-news {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+    padding-top: 15px;
+}
+
+.header-news:hover {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.caption {
+    text-decoration: none;
+}
+
+.news-date {
+    display: flex;
+    padding-top: 35px;
+}
+
+.date {
+    font-size: 12px;
+    color: #888888;
+    font-family: Open Regular;
+    padding-right: 15px;
+}
+
+.author {
+    font-size: 12px;
+    color: #000000;
+    font-family: Open Bold;
+}
+
+.news-info {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-family: Open Regular;
+    padding-top: 50px;
+}
+
+.second-info {
+    font-size: 15px;
+    line-height: 22px;
+    color: #0f0d0e;
+    font-family: Open Regular;
+    padding-top: 15px;
+}
+
+.aside-container {
+    width: 272px;
+    min-height: 2420px;
+    margin-left: 120px;
+}
+
+.new-post {
+    width: 272px;
+    min-height: 602px;
+}
+
+.new-post-header {
+    width: 272px;
+    height: 34px;
+    position: relative;
+    margin-bottom: 27px;
+}
+
+.post-header-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+    text-align: center;
+}
+
+.post-header-text:after {
+    content: "";
+    opacity: 0.400;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    position: absolute;
+    bottom: 0px;
+    left: 103px;
+}
+
+.aside-news {
+    display: flex;
+    justify-content: space-between;
+    width: 272px;
+    height: 73px;
+}
+
+.aside-news:nth-child(n + 2) {
+    margin-top: 20px;
+}
+
+.aside-news-image {
+    width: 73px;
+    height: 73px;
+    position: relative;
+    z-index: 1;
+}
+
+.aside-news-image:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 70px;
+    height: 70px;
+    background-color: #f4f7f6;
+}
+
+.aside-news-text {
+    width: 183px;
+    height: 73px;
+}
+
+.aside-news-headline {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: Open Bold;
+}
+
+.aside-news-headline:hover {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.aside-news-search {
+    width: 273px;
+    height: 50px;
+    position: relative;
+    margin-top: 58px;
+}
+
+.search {
+    box-sizing: border-box;
+    width: 270px;
+    height: 48px;
+    border: none;
+    background-color: #f4f7f6;
+}
+
+.search::placeholder {
+    opacity: 0.541;
+    font-size: 13px;
+    line-height: 40px;
+    color: #000000;
+    font-family: Open Regular;
+    padding-left: 18px;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #f4f7f6;
+    border: 1px solid #b59f5b;
+}
+
+.aside-search-button {
+    width: 48px;
+    height: 48px;
+    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-color: #b59f5b;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    position: absolute;
+    right: 0px;
+}
+
+.aside-search-button:hover {
+    width: 48px;
+    height: 48px;
+    background-color: #323232;
+}
+
+.aside-mailing-list {
+    width: 272px;
+    height: 165px;
+    margin-top: 61px;
+}
+
+.mailing-list-header {
+    width: 272px;
+    height: 34px;
+    position: relative;
+}
+
+.mailing-list-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+    text-align: center;
+}
+
+.mailing-list-text:before {
+    content: "";
+    opacity: 0.400;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    position: absolute;
+    bottom: 0px;
+    left: 103px;
+}
+
+.email-registration {
+    width: 270px;
+    height: 117px;
+    margin-top: 20px;
+}
+
+.mailing-list-email {
+    width: 266px;
+    height: 48px;
+    border: none;
+    background-color: #f4f7f6;
+}
+
+.mailing-list-email:focus {
+    outline: none;
+    background-color: #f4f7f6;
+    border: 1px solid #b59f5b;
+}
+
+.mailing-list-email::placeholder {
+    opacity: 0.541;
+    font-size: 13px;
+    line-height: 40px;
+    color: #000000;
+    font-family: Open Regular;
+    padding-left: 18px;
+}
+
+
+.registration-button {
+    width: 270px;
+    height: 48px;
+    background-color: #b59f5b;
+    border: none;
+    font-size: 14px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Open Bold;
+    margin-top: 17px;
+}
+
+.registration-button:hover {
+    border-top: 1px solid #b59f5b;
+    background-color: #323232;
+}
+
+.aside-tegs-box {
+    width: 272px;
+    height: 171px;
+    margin-top: 56px;
+}
+
+.tegs-header {
+    width: 272px;
+    height: 34px;
+    position: relative;
+}
+
+.aside-tegs-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+    text-align: center;
+}
+
+.aside-tegs-text:before {
+    content: "";
+    opacity: 0.400;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    position: absolute;
+    bottom: 0px;
+    left: 103px;
+}
+
+.tegs-item {
+    width: 272px;
+    height: 106px;
+    margin-top: 21px;
+}
+
+.teg {
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+    border: 3px solid #eeeeee;
+    padding: 5px 13px;
+    text-decoration: none;
+}
+
+.teg:hover {
+    border: 3px solid #b59f5b;
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+}
+
+}
+
+.teg:hover {
+    background-color: rgba(244,243,241,0);
+}
+
+.aside-them-box {
+    width: 272px;
+    min-height: 325px;
+    margin-top: 57px;
+}
+
+.them-header {
+    width: 272px;
+    height: 34px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.them-header-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-family: Open Bold;
+    text-align: center;
+}
+
+.them-header-text:before {
+    content: "";
+    opacity: 0.400;
+    width: 66px;
+    height: 3px;
+    background-color: #b59f5b;
+    position: absolute;
+    bottom: 0px;
+    left: 103px;
+}
+
+.them-sections {
+    width: 272px;
+    height: 46px;
+    border-bottom: 1px solid #eeeeee;
+    position: relative;
+}
+
+.them-item-beauty {
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-family: Open Bold;
+    text-decoration: none;
+}
+
+.them-item-beauty:after {
+    content: "12";
+    position: absolute;
+    left: 65px;
+    font-size: 12px;
+    line-height: 36px;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.them-item-beauty:hover {
+    color: #b59f5b;
+}
+
+.them-item-health {
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-family: Open Bold;
+    text-decoration: none;
+}
+
+.them-item-health:after {
+    content: "4";
+    position: absolute;
+    left: 76px;
+    font-size: 12px;
+    line-height: 36px;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.them-item-health:hover {
+    color: #b59f5b;
+}
+
+.them-item-ifestyle {
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-family: Open Bold;
+    text-decoration: none;
+}
+
+.them-item-ifestyle:after {
+    content: "145";
+    position: absolute;
+    left: 103px;
+    font-size: 12px;
+    line-height: 36px;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.them-item-ifestyle:hover {
+    color: #b59f5b;
+}
+
+.them-item-music {
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-family: Open Bold;
+    text-decoration: none;
+}
+
+.them-item-music:after {
+    content: "28";
+    position: absolute;
+    left: 63px;
+    font-size: 12px;
+    line-height: 36px;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.them-item-music:hover {
+    color: #b59f5b;
+}
+
+.them-item-sport {
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-family: Open Bold;
+    text-decoration: none;
+}
+
+.them-item-sport:after {
+    content: "62";
+    position: absolute;
+    left: 50px;
+    font-size: 12px;
+    line-height: 36px;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.them-item-sport:hover {
+    color: #b59f5b;
+}
+
+.them-item-yoga {
+    font-size: 14px;
+    line-height: 47px;
+    color: #000000;
+    font-family: Open Bold;
+    text-decoration: none;
+}
+
+.them-item-yoga:after {
+    content: "8";
+    position: absolute;
+    left: 40px;
+    font-size: 12px;
+    color: #b59f5b;
+    font-family: Open Bold;
+}
+
+.them-item-yoga:hover {
+    color: #b59f5b;
+}
+
+.footer {
+    width: 1200px;
+    height: 170px;
+    margin: 0px auto;
+}
+
+.footer-box {
+    width: 1170px;
+    height: 170px;
+    padding: 0px 15px;
+}
+
+.footer-icon-box {
+    width: 1170px;
+    height: 83px;
+    background-color: #f4f7f6;
+    text-align: center;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    padding-right: 28px;
+    padding-top: 30px;
+}
+
+.pinterest {
+    width: 20px;
+    height: 20px;
+    padding-right: 28px;
+    padding-top: 30px;
+}
+
+.tumblr {
+    width: 20px;
+    height: 20px;
+    padding-top: 30px;
+}
+
+.copyright-box {
+    width: 1170px;
+    height: 13px;
+}
+
+.copyright-text {
+    font-size: 12px;
+    line-height: 40px;
+    color: #999999;
+    font-family: Open Bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.copyright-link {
+    text-decoration: none;
+}
